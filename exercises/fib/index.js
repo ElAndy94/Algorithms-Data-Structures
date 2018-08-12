@@ -34,27 +34,27 @@ const fib = memoize(slowfib);
 
 //////////////////////////
 
-function fib(n) {
-  if (n < 2) {
-    return n;
-  }
+// function fib(n) {
+//   if (n < 2) {
+//     return n;
+//   }
 
-  return fib(n - 1) + fib(n - 2);
-}
+//   return fib(n - 1) + fib(n - 2);
+// }
 
 ///////////////////////////////////
 
-function fib(n) {
-  const result = [0, 1];
+// function fib(n) {
+//   const result = [0, 1];
 
-  for (let i = 2; i <= n; i++) {
-    const a = result[i - 1];
-    const b = result[i - 2];
+//   for (let i = 2; i <= n; i++) {
+//     const a = result[i - 1];
+//     const b = result[i - 2];
 
-    result.push(a + b);
-  }
+//     result.push(a + b);
+//   }
 
-  return result[n];
-}
+//   return result[n];
+// }
 
 module.exports = fib;
